@@ -1,3 +1,5 @@
+import { ReactNode } from 'react';
+
 export type PostType = {
   id: string, 
   title: string,
@@ -13,4 +15,4 @@ export type PostType = {
     userId: string,
     message?: string,
   }[]
-}
+} & ReactNode
